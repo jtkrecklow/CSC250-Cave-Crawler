@@ -28,6 +28,18 @@ public class JSONArray
 		}
 		
 	}
+	
+	public String exportToJSON()
+	{
+		String answer = "[";
+		
+		for (int i = 0; i < size; i++)
+		{
+			answer += theVariables[i].exportToJSON();
+		}
+		answer += "]";
+		return answer;
+	}
 
 
 }
